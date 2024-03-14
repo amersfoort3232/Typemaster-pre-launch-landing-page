@@ -37,6 +37,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -104,6 +105,26 @@ button {
   font-weight: bold;
   font-size: 1rem;
   text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.nav-preorder-button {
+  background-color: #e8eff2;
+  color: #162542;
+}
+.nav-preorder-button:hover {
+  background-color: #162542;
+  color: #e8eff2;
+}
+
+.Introduction {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title-container {
+  max-width: 25rem;
 }
 
 h1 {
@@ -113,13 +134,20 @@ h1 {
 .intro-preorder-container {
   display: flex;
   align-items: center;
-  margin: 1rem;
-  justify-content: space-between;
   gap: 1rem;
+  margin: 1rem 0;
 }
 
 .intro-preorder-button {
-  padding: 0.5rem 1rem;
+  background-color: #f16718;
+}
+
+.intro-preorder-button:hover {
+  background-color: #ff9b62;
+}
+
+picture {
+  overflow-x: hidden;
 }
 
 picture > * {
@@ -128,6 +156,102 @@ picture > * {
 
 .first-image {
   position: relative;
-  left: 10%;
   max-width: 20rem;
+  left: 3rem;
+  max-height: 20rem;
+}
+
+.second-image {
+  position: relative;
+  height: 10rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+.third-image {
+  width: 10rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.features-title {
+  display: flex;
+  flex-direction: column;
+  border: 4rem;
+  text-align: center;
+}
+
+.about-keyboard-container img {
+  width: 3rem;
+  height: 3rem;
+  background-color: #f16718;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.about-keyboard-container {
+  margin-top: 1rem;
+}
+
+.about-keyboard-container * {
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  .Introduction {
+    flex-wrap: wrap;
+  }
+  .first-image {
+    margin: 1rem;
+  }
+  .second-image {
+    width: 10rem;
+    height: fit-content;
+  }
+
+  .third-image {
+    width: 17rem;
+    height: fit-content;
+  }
+
+  .features-title {
+    max-width: 12rem;
+    margin-left: 4rem;
+  }
+
+  .about-keyboard-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 4rem;
+  }
+  .about-keyboard-container > * {
+    flex: 50%;
+    flex-wrap: wrap;
+    max-width: 10rem;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 1rem;
+  }
+
+  .third-image {
+    width: 25rem;
+    height: fit-content;
+  }
 }
