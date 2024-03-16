@@ -1,0 +1,23 @@
+.keyboard-feature-container {
+  margin: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.keyboard-feature-container div {
+  margin: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 16rem;
+}
+
+.keyboard-feature-container img {
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  background-color: #f16718;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}

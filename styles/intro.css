@@ -1,0 +1,51 @@
+.introduction {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title-container {
+  max-width: 20rem;
+}
+
+.intro-preorder-container {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  justify-content: space-around;
+}
+
+.intro-preorder-container p {
+  margin: 0.5rem;
+}
+
+.intro-preorder-button {
+  background-color: #f16718;
+  border-style: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: #ffffff;
+}
+
+.intro-preorder-button:hover {
+  background-color: #ff9b62;
+  color: #ffffff;
+}
+
+.first-image {
+  margin-top: 1rem;
+  border-radius: 2rem;
+  max-width: 20rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .title-container {
+    max-width: 40rem;
+    max-height: fit-content;
+  }
+
+  .first-image {
+    max-width: 25rem;
+  }
+}

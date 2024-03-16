@@ -1,0 +1,56 @@
+.second-intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.second-image,
+.third-image {
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.second-image {
+  max-width: 7rem;
+  margin-left: -1rem;
+  color: #f16718;
+}
+
+.third-image {
+  max-width: 10rem;
+}
+
+.features-title {
+  text-align: center;
+  margin: 1rem;
+  max-width: 20rem;
+}
+
+@media screen and (min-width: 768px) {
+  .title-container {
+    max-width: 25rem;
+  }
+
+  .second-image {
+    max-width: 10rem;
+  }
+
+  .third-image {
+    max-width: 14rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title-container {
+    max-width: 30rem;
+  }
+
+  .second-image {
+    max-width: 12rem;
+  }
+
+  .third-image {
+    max-width: 21rem;
+  }
+}
