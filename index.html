@@ -15,16 +15,20 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/intro.css" />
+    <link rel="stylesheet" href="./styles/second-intro.css" />
+    <link rel="stylesheet" href="./styles/keyboard-feature.css" />
     <title>Frontend Mentor | Typemaster pre-launch landing page</title>
   </head>
   <body>
-    <nav>
-      <img src="assets/shared/logo.svg" alt="logo" />
-      <button class="nav-preorder-button">Pre-order now</button>
-    </nav>
     <main>
-      <section class="Introduction">
+      <nav class="nav-container">
+        <img src="assets/shared/logo.svg" alt="logo" />
+        <button class="nav-preorder-button">Pre-order now</button>
+      </nav>
+      <section class="introduction">
         <div class="title-container">
           <h1>Typemaster keyboard</h1>
           <p>
@@ -33,27 +37,46 @@
           </p>
           <div class="intro-preorder-container">
             <button class="intro-preorder-button">Pre-order now</button>
-            <p style="margin-top: 0">Release on 5/27</p>
+            <p>Release on 5/27</p>
           </div>
         </div>
-        <picture
-          ><img
-            class="first-image"
-            src="assets/mobile/image-keyboard.jpg"
-            alt="typemaster keyboard"
-        /></picture>
-        <picture
-          ><img
+
+        <div class="title-image-container">
+          <picture
+            ><img
+              class="first-image"
+              src="assets/mobile/image-keyboard.jpg"
+              alt="typemaster keyboard"
+          /></picture>
+        </div>
+      </section>
+
+      <section class="second-intro-container">
+        <picture>
+          <source
+            media="(min-width :1024px)"
+            srcset="assets/desktop/image-phone-and-keyboard.jpg" />
+          <source
+            media="(min-width :768px)"
+            srcset="assets/tablet/image-phone-and-keyboard.jpg" />
+          <img
             class="second-image"
             src="assets/mobile/image-phone-and-keyboard.jpg"
             alt="keyboard and phone"
         /></picture>
-        <picture
-          ><img
+        <picture>
+          <source
+            media="(min-width :1024px)"
+            srcset="assets/desktop/image-glass-and-keyboard.jpg" />
+          <source
+            media="(min-width :768px)"
+            srcset="assets/tablet/image-glass-and-keyboard.jpg" />
+          <img
             class="third-image"
             src="assets/mobile/image-glass-and-keyboard.jpg"
             alt="keyboard and glass"
         /></picture>
+
         <div class="features-title">
           <h2>Mechanical wireless keyboard</h2>
           <p>
@@ -62,53 +85,46 @@
             reliable wireless connectivity.
           </p>
         </div>
-        <div class="about-keyboard-container">
-          <div class="highly-compatible-container">
-            <img
-              src="assets/shared/icon-compatible.svg"
-              alt="compatible icon"
-            />
-            <h3>Highly compatible</h3>
-            <p>
-              Easy to use and works well with all major computer brands, gaming
-              consoles and mobile devices. Plug & play, no installation or
-              driver needed.
-            </p>
-          </div>
-          <div class="wireless-with-bluetooth-container">
-            <img
-              src="./assets/shared/icon-bluetooth.svg"
-              alt="bluetooth icon"
-            />
-            <h3>Wireless with bluetooth</h3>
-            <p>
-              Powerful 2.4G RF technology allows you to connect the cordless
-              keyboard from up to 30ft away. Simply plug the unifying receiver
-              into your computer.
-            </p>
-          </div>
-          <div class="high-capacity-battery-container">
-            <img src="./assets/shared/icon-battery.svg" />
-            <h3>High capacity battery</h3>
-            <p>
-              Equipped with a long-lasting built-in battery, you’ll never have
-              to spend a dime on replaceable ones.  Enjoy 40 hours of usage time
-              between charges.
-            </p>
-          </div>
-          <div class="rgb-backlit-modes-container">
-            <img src="./assets/shared/icon-light.svg" />
-            <h3>RGB backlit modes</h3>
-            <p>
-              Choose from 4 backlight brightness levels and adjustable breathing
-              speed. Each key glows intensely in the dark and helps you type in
-              low light conditions.
-            </p>
-          </div>
+      </section>
+      <section class="keyboard-feature-container">
+        <div class="first-feature-container">
+          <img src="assets/shared/icon-compatible.svg" alt="compatible icon" />
+          <h3>Highly compatible</h3>
+          <p>
+            Easy to use and works well with all major computer brands, gaming
+            consoles and mobile devices. Plug & play, no installation or driver
+            needed.
+          </p>
+        </div>
+        <div class="second-feature-container">
+          <img src="./assets/shared/icon-bluetooth.svg" alt="bluetooth icon" />
+          <h3>Wireless with bluetooth</h3>
+          <p>
+            Powerful 2.4G RF technology allows you to connect the cordless
+            keyboard from up to 30ft away. Simply plug the unifying receiver
+            into your computer.
+          </p>
+        </div>
+        <div class="third-feature-container">
+          <img src="./assets/shared/icon-battery.svg" />
+          <h3>High capacity battery</h3>
+          <p>
+            Equipped with a long-lasting built-in battery, you’ll never have to
+            spend a dime on replaceable ones.  Enjoy 40 hours of usage time
+            between charges.
+          </p>
+        </div>
+        <div class="fourth-feature-container">
+          <img src="./assets/shared/icon-light.svg" />
+          <h3>RGB backlit modes</h3>
+          <p>
+            Choose from 4 backlight brightness levels and adjustable breathing
+            speed. Each key glows intensely in the dark and helps you type in
+            low light conditions.
+          </p>
         </div>
       </section>
-
-      <footer>Typemaster 2021 | All Rights Reserved</footer>
     </main>
+    <footer>Typemaster 2021 | All Rights Reserved</footer>
   </body>
 </html>
